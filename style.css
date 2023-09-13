@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+form{
+    width:70%;
+    padding:30px;
+    background-color: white;
+    border:5px solid springgreen;
+    margin:auto;
+    margin-top:10%;
+}
+
+form>section{
+    margin:10px;
+}
+
+label, input, button{
+    display: inline-block;
+    margin:5px;
+    padding:3px;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    width:45%;
+}
+
+input{
+    width:60%;
+}
+
+label{
+    width:30%;
+}
+
+input[type=radio], input[type=checkbox]{
+    transform: scale(4,4);
+}
+
+option{
+    font-size: 3em;
+}
+
+select, legend{
+    transform: scale(2,2);
+}
+
+textarea{
+    font-size: 3em;
+}
+
+input{
+    border:none;
+    outline:none;
+    border-bottom: 3px solid black;
+    transition: border-bottom 0.8s;
+}
+
+input:focus{
+    transition: border-bottom 0.8s;
+    border-bottom: 3px solid dodgerblue;
+}
+
+input:valid{
+    transition: border-bottom 0.8s;
+    border-bottom: 3px solid springgreen;
+}
+
+input:invalid{
+    transition: border-bottom 0.8s;
+    border-bottom: 3px solid red;
+}
